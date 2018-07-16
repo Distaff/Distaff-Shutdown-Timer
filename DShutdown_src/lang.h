@@ -1,0 +1,14 @@
+char* SET                           = "USTAW";
+char* CLOSE                         = "ZAMKNIJ";
+char* ABORT_SCHEDULED_SHUTDOWN      = "ANULUJ ZAPLANOWANE WY£¥CZENIE";
+char* SHOW_WARNINGS                 = "Wyœwietlaj ostrze¿enia o wy³¹czeniu";
+char* MAIN_TEXT                     = "WprowadŸ czas, po jakim komputer ma siê wy³¹czyæ (w minutch):";
+char* TO_SHUTDOWN                   = "Do wy³¹czenia pozosta³o:";
+char* HOURS                         = "godzin";
+char* AND                           = "i";
+char* MINUTES                       = "minut";
+char* SHUTDOWN_SCHEDULED            = "Planowane wy³¹czenie systemu.";
+char* TO_SHUTDOWN30                 = "Do wy³¹czenia pozosta³o: 30 minut.";
+char* TO_SHUTDOWN5                  = "Do wy³¹czenia pozosta³o: 5 minut.";
+char* INSERT_CORRECT                = "WprowadŸ poprawn¹ iloœæ minut.";
+char* INCORRECT_VALUE               = "Niepoprawna wartoœæ.";
