@@ -1,0 +1,43 @@
+# Project: DShutdown
+# Compiler: Default GCC compiler
+# Compiler Type: MingW 3
+# Makefile created by wxDev-C++ IDE 7.4.2.569 on 17-07-18 00:20
+
+WXLIBNAME = wxmsw29u
+CPP       = g++.exe
+CC        = gcc.exe
+WINDRES   = "windres.exe"
+OBJ       = Objects/main.o Objects/DShutdown_private.res
+LINKOBJ   = "Objects/main.o" Objects/DShutdown_private.res
+LIBS      = -L"D:/Srodowiska/wxDevC++/lib/wx/gcc_lib" -L"D:/Srodowiska/wxDevC++/lib" -L"D:/Srodowiska/wxDevC++/MinGW32/lib" -mwindows  -msse2 
+INCS      = -I"D:/Srodowiska/wxDevC++/MinGW32/include"
+CXXINCS   = -I"D:/Srodowiska/wxDevC++/MinGW32/include" -I"D:/Srodowiska/wxDevC++/" -I"D:/Srodowiska/wxDevC++/include/common"
+RCINCS    = --include-dir "D:/SRODOW~1/WXDEVC~1/include/common"
+BIN       = ../DShutdown.exe
+DEFINES   = 
+CXXFLAGS  = $(CXXINCS) $(DEFINES)   -fexpensive-optimizations -O3 -msse2
+CFLAGS    = $(INCS) $(DEFINES)   -fexpensive-optimizations -O3 -msse2
+GPROF     = gprof.exe
+ifeq ($(OS),Windows_NT)
+   RM = del /Q
+   FixPath = $(subst /,\,$1)
+else
+   RM = rm -f
+   FixPath = $1
+endif
+LINK      = g++.exe
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	$(RM) $(call FixPath,$(LINKOBJ)) "$(call FixPath,$(BIN))"
+
+$(BIN): $(OBJ)
+	$(LINK) $(LINKOBJ) -o "$(BIN)" $(LIBS) 
+
+Objects/main.o: $(GLOBALDEPS) main.cpp
+	$(CPP) -c main.cpp -o Objects/main.o $(CXXFLAGS)
+
+Objects/DShutdown_private.res: Objects/DShutdown_private.rc 
+	$(WINDRES) --input-format=rc -o Objects/DShutdown_private.res $(RCINCS) Objects/DSHUTD~1.RC -O coff
