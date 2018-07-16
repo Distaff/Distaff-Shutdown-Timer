@@ -90,7 +90,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
         hButton3 = CreateWindowEx(WS_EX_CLIENTEDGE, "BUTTON", ABORT_SCHEDULED_SHUTDOWN, WS_CHILD | WS_VISIBLE | WS_BORDER,
         10, 165, 290, 40, hwnd, (HMENU)ID_ABORT, hInstance, NULL),
         hCheckbox1 = CreateWindowEx(0, "BUTTON", SHOW_WARNINGS, WS_CHILD | WS_VISIBLE | BS_CHECKBOX,
-        22, 143, 270, 20, hwnd, (HMENU)ID_CHECKBOX, hInstance, NULL),
+        40, 143, 270, 20, hwnd, (HMENU)ID_CHECKBOX, hInstance, NULL),
     // INPUT
         hTime = CreateWindowEx(WS_EX_CLIENTEDGE, "EDIT", NULL, WS_CHILD | WS_VISIBLE | WS_BORDER | ES_NUMBER, 
         100, 100, 110, 40, hwnd, NULL, hInstance, NULL),
@@ -98,7 +98,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
         hText1 = CreateWindowEx(0, "STATIC", NULL, WS_CHILD | WS_VISIBLE | SS_CENTER, 
         10, 10, 290, 20, hwnd, NULL, hInstance, NULL),
         hText2 = CreateWindowEx(0, "STATIC", NULL, WS_CHILD | WS_VISIBLE | SS_CENTER, 
-        0, 40, 290, 50, hwnd, NULL, hInstance, NULL);
+        10, 40, 290, 50, hwnd, NULL, hInstance, NULL);
     SetWindowText(hText1, "DShutdown 1.0.0");
     SetWindowText(hText2, MAIN_TEXT);
 

@@ -1,7 +1,7 @@
 # Project: DShutdown
 # Compiler: Default GCC compiler
 # Compiler Type: MingW 3
-# Makefile created by wxDev-C++ IDE 7.4.2.569 on 16-07-18 23:59
+# Makefile created by wxDev-C++ IDE 7.4.2.569 on 17-07-18 00:20
 
 WXLIBNAME = wxmsw29u
 CPP       = g++.exe
@@ -36,7 +36,7 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(LINK) $(LINKOBJ) -o "$(BIN)" $(LIBS) 
 
-Objects/main.o: $(GLOBALDEPS) main.cpp main.h lang.h
+Objects/main.o: $(GLOBALDEPS) main.cpp
 	$(CPP) -c main.cpp -o Objects/main.o $(CXXFLAGS)
 
 Objects/DShutdown_private.res: Objects/DShutdown_private.rc 
