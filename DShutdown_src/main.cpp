@@ -98,7 +98,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
         hText1 = CreateWindowEx(0, "STATIC", NULL, WS_CHILD | WS_VISIBLE | SS_CENTER, 
         10, 10, 290, 20, hwnd, NULL, hInstance, NULL),
         hText2 = CreateWindowEx(0, "STATIC", NULL, WS_CHILD | WS_VISIBLE | SS_CENTER, 
-        0, 40, 290, 50, hwnd, NULL, hInstance, NULL);
+        10, 40, 290, 50, hwnd, NULL, hInstance, NULL);
     SetWindowText(hText1, "DShutdown 1.0.0");
     SetWindowText(hText2, MAIN_TEXT);
 
