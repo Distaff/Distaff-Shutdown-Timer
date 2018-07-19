@@ -13,7 +13,7 @@ FILETYPE VFT_APP
 BEGIN
     BLOCK "StringFileInfo"
     BEGIN
-        BLOCK "080904E4"
+        BLOCK "041504E4"
         BEGIN
             VALUE "CompanyName", ""
             VALUE "FileVersion", "1.0.0.0"
@@ -28,7 +28,7 @@ BEGIN
     END
     BLOCK "VarFileInfo"
     BEGIN
-        VALUE "Translation", 0x0809, 1252
+        VALUE "Translation", 0x0415, 1252
     END
 END
 
