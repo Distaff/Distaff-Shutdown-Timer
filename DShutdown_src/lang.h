@@ -1,0 +1,14 @@
+char* SET                           = "SET";
+char* CLOSE                         = "CLOSE";
+char* ABORT_SCHEDULED_SHUTDOWN      = "ABORT SCHEDULED SHUTDOWN";
+char* SHOW_WARNINGS                 = "Show warnings about shutdown";
+char* MAIN_TEXT                     = "Enter time, after which the computer should turn off (in minutes):";
+char* TO_SHUTDOWN                   = "To shutdown:";
+char* HOURS                         = "hours";
+char* AND                           = "and";
+char* MINUTES                       = "minutes";
+char* SHUTDOWN_SCHEDULED            = "Shutdown scheduled.";
+char* TO_SHUTDOWN30                 = "To shutdown: 30 minut.";
+char* TO_SHUTDOWN5                  = "To shutdown: 5 minut.";
+char* INSERT_CORRECT                = "Enter correct value.";
+char* INCORRECT_VALUE               = "Incorrect value.";
