@@ -27,7 +27,7 @@ LicenseData "LICENSE.rtf"
 # This will be in the installer/uninstaller's title bar
 Name "${COMPANYNAME} - ${APPNAME}"
 Icon ".\Icon\DShutdown.ico"
-outFile ".\Output\DShutdownPL-Setup-1.0.0.exe"
+outFile ".\Output\DShutdownEN-Setup-1.0.0.exe"
  
 !include LogicLib.nsh
 !include StdUtils.nsh
